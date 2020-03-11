@@ -1,0 +1,38 @@
+import React from 'react';
+import wordpress from './img/wordpress_icon.jpg';
+import teg from './img/teg.jpg';
+import react from './img/react_icon.png';
+import monitor from './img/monitor.jpg';
+
+function MyService(){
+    return(
+        <div id="my_service_bg">
+        <div className="my_service_line_top"></div>
+          <h3>MY SERVICE</h3>
+        <div id="my_service">
+            <div>
+              <img src={wordpress} />
+              <div className="text_1">HTML/CSS LAYOUTS</div>
+              <div className="text_2">Landing page, resume-site, portfolio-site</div>
+            </div>
+            <div>
+              <img  src={teg} />
+              <div className="text_1">PROGRAMMING</div>
+              <div className="text_2">PHP, MySQL, JavaScript, jQuery</div>
+            </div>
+            <div>
+              <img src={react}/>
+              <div className="text_1">WORDPRESS, MODX DEVELOPMENT</div>
+              <div className="text_2">Integration HTML template in WordPress, Modx</div>
+            </div>
+            <div>
+              <img src={monitor}/>
+              <div className="text_1">WEBSITE MAINTENANCE</div>
+              <div className="text_2">Installation and configuration CMS, placing a site on hosting.</div>
+            </div>
+        </div>
+        <div className="my_service_line_bottom"></div>
+      </div>
+    );
+}
+export default MyService;
